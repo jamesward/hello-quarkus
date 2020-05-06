@@ -1,12 +1,12 @@
 Hello Quarkus
----------------------------------
+-------------
 
 Run Locally:
 ```
 ./mvnw quarkus:dev
 ```
 
-Containerize Locally:
+Containerize Locally as a GraalVM native image:
 ```
 docker build -t hello-quarkus .
 ```
