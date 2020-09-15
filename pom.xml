@@ -20,7 +20,7 @@
             <dependency>
                 <groupId>io.quarkus</groupId>
                 <artifactId>quarkus-bom</artifactId>
-                <version>1.4.2.Final</version>
+                <version>1.8.0.Final</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -39,7 +39,7 @@
             <plugin>
                 <groupId>io.quarkus</groupId>
                 <artifactId>quarkus-maven-plugin</artifactId>
-                <version>1.4.2.Final</version>
+                <version>1.8.0.Final</version>
                 <executions>
                     <execution>
                         <goals>
@@ -60,7 +60,7 @@
             <id>native</id>
             <properties>
                 <quarkus.package.type>native</quarkus.package.type>
-                <quarkus.native.additional-build-args>--static,-H:UseMuslC=${project.basedir}/bundle/</quarkus.native.additional-build-args>
+                <quarkus.native.additional-build-args>--static,--libc=musl</quarkus.native.additional-build-args>
             </properties>
         </profile>
     </profiles>
